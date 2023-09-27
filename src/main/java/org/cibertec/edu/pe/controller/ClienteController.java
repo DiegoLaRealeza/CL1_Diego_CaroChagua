@@ -22,7 +22,7 @@ public class ClienteController {
 	@GetMapping("/listar")
 	public String Listar(Model m) {
 		List<Cliente> lista = servicio.Listado();
-		m.addAttribute("clientes", lista);
+		m.addAttribute("clientes", lista);		
 		return "listar";
 	}
 	
